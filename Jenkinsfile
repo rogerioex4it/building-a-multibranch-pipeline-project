@@ -35,7 +35,7 @@ pipeline {
                 branch 'production'
             }
             steps {
-                sh './jenkins/scripts/deliver-for-production.sh'
+                sh './jenkins/scripts/deploy-for-production.sh'
                 input 'Deploy para ambiente de PRODUCAO?'
                 sh './jenkins/scripts/kill.sh'
             }
